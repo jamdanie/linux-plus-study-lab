@@ -1,0 +1,32 @@
+# Read and change file permissions
+
+Linux+ XK0-006 objective 3.3 · [Table of contents](../README.md)
+
+A handoff should be writable by its owner and readable by its group. How do you check the result?
+
+A file mode has separate read, write, and execute bits for its owner, group, and everyone else. In numeric notation read is 4, write is 2, and execute is 1.
+
+## Try it in Bash
+
+Start in a fresh temporary directory in an Ubuntu terminal. Run the lines in order.
+
+```bash
+cd "$(mktemp -d)"
+touch handoff
+chmod 600 handoff
+stat -c '%A %a %n' handoff
+chmod g+r handoff
+stat -c '%A %a %n' handoff
+```
+
+## Read the result
+
+The modes change from 600 to 640. The middle digit gains 4. The owner and group names stay the same because chmod changes permissions.
+
+**Check yourself.** How would you remove only the permission you just added?
+
+<details><summary>Show answer</summary>
+
+Use chmod g-r handoff, then check for 600. Changing ownership would address a different problem.
+
+</details>
