@@ -1,6 +1,6 @@
-# Review the first three chapters
+# Chapter review cards
 
-On GitHub, choose a chapter and open each answer after making your choice. In Anki Desktop, download [the tab-separated deck](linux-plus.tsv) using the raw download button, then choose **File → Import**. Use the Basic note type and a deck named `Linux+ XK0-006`. In the preview, check that columns 1, 2, and 3 map to Front, Back, and Tags. Filter by `chapter_01`, `chapter_02`, or `chapter_03` to study one lesson. [Anki text import guide](https://docs.ankiweb.net/importing/text-files.html)
+On GitHub, choose a chapter and open each answer after making your choice. In Anki Desktop, download [the tab-separated deck](linux-plus.tsv) using the raw download button, then choose **File → Import**. Use the Basic note type and a deck named `Linux+ XK0-006`. In the preview, check that columns 1, 2, and 3 map to Front, Back, and Tags. Filter by `chapter_01`, `chapter_02`, `chapter_03`, `chapter_04`, or `chapter_05` to study one lesson. [Anki text import guide](https://docs.ankiweb.net/importing/text-files.html)
 
 ## Chapter 1
 
@@ -185,6 +185,131 @@ On GitHub, choose a chapter and open each answer after making your choice. In An
 - C. The name of your current shell: Identifies the command interpreter.
 
 📦 Key Idea: A directory's current size alone cannot establish free capacity.
+
+</details>
+
+## Chapter 4
+
+**Two timers named sleep are running. What identifies one of those running processes?**
+
+- A. Its command name
+- B. Its PID
+- C. The terminal title
+
+🧠 Think: Which value distinguishes two instances of one program?
+
+<details><summary>Show answer</summary>
+
+**B. Its PID**
+
+- A. Its command name: Both commands have the same name.
+- B. Its PID: Linux gives each live process a distinct process ID.
+- C. The terminal title: The same terminal can start both timers.
+
+📦 Key Idea: Record the PID while the process is running.
+
+</details>
+
+**Which Bash command waits for your background timer and gives you its exit status?**
+
+- A. jobs -l
+- B. ps -p "$timer_pid"
+- C. wait "$timer_pid"
+
+🧠 Think: Do you need a snapshot or the completion result?
+
+<details><summary>Show answer</summary>
+
+**C. wait "$timer_pid"**
+
+- A. jobs -l: Lists jobs tracked by this shell.
+- B. ps -p "$timer_pid": Reports whether the process is present at that moment.
+- C. wait "$timer_pid": Waits for this child process and returns its status.
+
+📦 Key Idea: Read $? immediately after wait to capture its result.
+
+</details>
+
+**Which value should you save immediately after starting sleep 120 & to identify that child?**
+
+- A. $!
+- B. $?
+- C. $$
+
+🧠 Think: Which shell value changes when a background job starts?
+
+<details><summary>Show answer</summary>
+
+**A. $!**
+
+- A. $!: Expands to the most recent background PID.
+- B. $?: Holds the preceding command’s exit status.
+- C. $$: Identifies the shell itself.
+
+📦 Key Idea: Capture $! before starting another background job.
+
+</details>
+
+
+## Chapter 5
+
+**You want to see which IPv4 gateway the host uses by default. Which check fits?**
+
+- A. ip -brief link
+- B. ip route show default
+- C. ps -p 1
+
+🧠 Think: Which output describes the next hop?
+
+<details><summary>Show answer</summary>
+
+**B. ip route show default**
+
+- A. ip -brief link: Shows interfaces and link information.
+- B. ip route show default: Displays the default IPv4 route if one exists. Look for via and dev.
+- C. ps -p 1: Shows process information for PID 1.
+
+📦 Key Idea: Read the route to identify the next hop.
+
+</details>
+
+**A wired adapter stays UP but changes from LOWER_UP to NO-CARRIER. What should you inspect first?**
+
+- A. The DNS search suffix
+- B. The backup directory
+- C. The cable and peer switch port
+
+🧠 Think: At what layer was a change observed?
+
+<details><summary>Show answer</summary>
+
+**C. The cable and peer switch port**
+
+- A. The DNS search suffix: Name resolution cannot explain a lost carrier signal.
+- B. The backup directory: Storage usage does not establish Ethernet link state.
+- C. The cable and peer switch port: The local link lost carrier. Check both cable ends and the peer port.
+
+📦 Key Idea: Administrative state and carrier answer different questions.
+
+</details>
+
+**Which interface lets software address this same Linux host through loopback?**
+
+- A. lo
+- B. A physical switch port
+- C. The default gateway
+
+🧠 Think: Which path stays within the host?
+
+<details><summary>Show answer</summary>
+
+**A. lo**
+
+- A. lo: lo is the Linux loopback interface.
+- B. A physical switch port: This is a connection point on a switch.
+- C. The default gateway: This is a next hop used by a default route.
+
+📦 Key Idea: Loopback traffic stays on the host.
 
 </details>
 

@@ -1,6 +1,6 @@
 # Linux+ study lab
 
-Start with one question: if a command says a file is missing, how do you tell whether the file is gone or you're looking in the wrong directory? Chapter 1 walks through that problem in a real Linux shell. All three chapters work in Ubuntu with Bash using a regular account.
+Start with one question: if a command says a file is missing, how do you tell whether the file is gone or you're looking in the wrong directory? Chapter 1 walks through that problem in a real Linux shell. The chapters work in Ubuntu with Bash using a regular account.
 
 ## Read the book
 
@@ -9,6 +9,10 @@ Start with one question: if a command says a file is missing, how do you tell wh
 | [1. Find your way around the terminal](chapters/01-terminal.md) | Create a handoff note, reproduce a path error, and read the note from a different directory. |
 | [2. Find the error inside a log](chapters/02-logs.md) | Locate a log, extract the lines a teammate needs, and verify the report. |
 | [3. Investigate a storage ticket](chapters/03-storage.md) | Read a filesystem report, compare two directories, and decide what the evidence supports. |
+| [4. Watch a process start and finish](chapters/04-processes.md) | Start a timer and follow its PID until it exits. |
+| [5. Follow a cable to a Linux interface](chapters/05-interfaces.md) | Read interface and route output, then compare it with a cable observation. |
+
+[Free browser terminals, videos, and optional Steam games](practice.md)
 
 Begin with [lab setup](setup.md) if you need a Linux terminal. Each chapter has a short lab and a question you can try without the walkthrough. After one chapter, review just its [flashcards](review/README.md).
 
