@@ -30,3 +30,13 @@ The modes change from 600 to 640. The middle digit gains 4. The owner and group 
 Use chmod g-r handoff, then check for 600. Changing ownership would address a different problem.
 
 </details>
+
+## Read a mode one group at a time
+
+For a regular file showing `-rw-r-----`, cover the first character and split the rest into three groups.
+
+| Owner | Group | Others |
+| --- | --- | --- |
+| rw- = 4 + 2 | r-- = 4 | --- = 0 |
+
+Predict the result of `chmod u-w handoff` after the 640 step above. Check with `stat -c '%A %a' handoff`. You should get 440. Restore the owner's write bit with `chmod u+w handoff`.
