@@ -33,3 +33,7 @@ The inode numbers for the original and hard-copy match. After the rename, hard-c
 Move renamed back to report. The stored path resolves again.
 
 </details>
+
+## Predict the inode numbers
+
+In the directory from this lab, run `ls -li renamed hard-copy shortcut`. Match the first column for the two names that still open the same data. Next run `printf 'second line\n' >> hard-copy` and read `cat renamed`. The new line appears through either hard link. The broken symbolic link still points to the old name.
