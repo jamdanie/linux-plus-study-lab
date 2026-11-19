@@ -313,4 +313,88 @@ On GitHub, choose a chapter and open each answer after making your choice. In An
 
 </details>
 
+## Visual lab checkpoint
+
+After trying the rack, branching, or storage exercise, answer these from memory.
+
+**A new host pings a neighbor on the same IPv4 subnet. What does an ARP reply normally supply?**
+
+- A. The neighbor's MAC address
+- B. The default gateway's password
+- C. The application's port number
+
+🧠 Think: What address does an Ethernet frame need?
+
+<details><summary>Show answer</summary>
+
+**A. The neighbor's MAC address**
+
+- A. The neighbor's MAC address — Maps the neighbor's IPv4 address to a link-layer address.
+- B. The default gateway's password — Credentials are outside this exchange.
+- C. The application's port number — Transport ports belong to a different layer.
+
+📦 Key Idea: Check the neighbor table for a local address mapping.
+
+</details>
+
+**A technician reseats a cable and the host now reports LOWER_UP. What has the host observed?**
+
+- A. A successful web request
+- B. A working link at the lower layer
+- C. A valid DNS answer
+
+🧠 Think: Which evidence came from the adapter?
+
+<details><summary>Show answer</summary>
+
+**B. A working link at the lower layer**
+
+- A. A successful web request — Requires a test involving the service.
+- B. A working link at the lower layer — The driver reports the lower layer is up.
+- C. A valid DNS answer — Requires a name lookup.
+
+📦 Key Idea: Verify the service separately after a link recovers.
+
+</details>
+
+**On cable-check, you commit a corrected rack note. Where does main point immediately afterward?**
+
+- A. To cable-check's newest commit
+- B. To the staged file
+- C. To its previous commit
+
+🧠 Think: Which branch was checked out?
+
+<details><summary>Show answer</summary>
+
+**C. To its previous commit**
+
+- A. To cable-check's newest commit — Only the checked-out branch advanced here.
+- B. To the staged file — Branches reference commits.
+- C. To its previous commit — Main did not move during the commit on cable-check.
+
+📦 Key Idea: Read the branch labels alongside the commit IDs.
+
+</details>
+
+**Which check ranks directories by allocated space with the largest first?**
+
+- A. df -h
+- B. du -sk backups reports | sort -nr
+- C. ls -lt
+
+🧠 Think: Which command measures directory trees in the same unit?
+
+<details><summary>Show answer</summary>
+
+**B. du -sk backups reports | sort -nr**
+
+- A. df -h — Shows filesystem capacity.
+- B. du -sk backups reports | sort -nr — Measures both directory totals in KiB and sorts numerically in reverse order.
+- C. ls -lt — Sorts entries by modification time.
+
+📦 Key Idea: Choose the measurement before sorting its output.
+
+</details>
+
 [Back to the book](../README.md)
