@@ -31,4 +31,13 @@ Two paid Steam games have similar names. Pick by what you want to practice. The 
 
 For a short session, do one of these pairings. A screenshot of the layout explains where you connected the cable. A terminal capture explains what Linux could see from one end.
 
+## Pick one activity for this session
+
+| If you want to see… | Start here | Evidence to keep |
+| --- | --- | --- |
+| A physical fault | [Rack ticket, with a free diagram or optional Steam game](visual/rack-ticket.md) | Both cable endpoints and the layer you verified after the fix |
+| A packet exchange | [Same-subnet ping in Packet Tracer](visual/packet-walk.md) | ARP request and ICMP reply from one simulated network |
+| A branch move | [Free browser game and local Git graph](visual/branch-map.md) | Two branch labels and the file content at each one |
+| A process disappear | [Live timer and process viewer](chapters/04-processes.md#watch-one-timer-in-a-process-viewer) | The PID and the observation after the timer exits |
+
 [Back to the chapters](README.md)
