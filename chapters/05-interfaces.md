@@ -38,3 +38,7 @@ ip route show default
 **Portfolio note.** Draw the two cable endpoints and label them. Underneath, include one observation from your own terminal and one thing the output can't establish, such as the physical switch port number. Mark a VM diagram as virtual.
 
 [Previous: processes](04-processes.md) · [Chapter 5 cards](../review/README.md#chapter-5) · [Practice resources](../practice.md)
+
+## Choose a visual network exercise
+
+If the adapter reports NO-CARRIER, start by identifying both ends of the connection in the [rack ticket](../visual/rack-ticket.md). If the link is up and you want to see how a host learns its neighbor's MAC address, follow the [Packet Tracer exercise](../visual/packet-walk.md). A carrier reading and an ARP reply answer different questions about the same path.
