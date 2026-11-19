@@ -12,4 +12,8 @@ The domain weights below come from the [CompTIA Linux+ V8 exam objectives, versi
 
 These are introductory exercises within broader objectives. For example, using `df` and `du` covers two tools in 1.3. Partitioning, mounts, RAID, and logical volumes still need separate practice. When reviewing a skill, try the chapter challenge in a fresh terminal and explain which output supports your answer.
 
+### Visual practice by objective
+
+Use the [same-subnet packet walk](visual/packet-walk.md) to practice reading neighbor evidence for 1.4, the [branch graph](visual/branch-map.md) to trace a commit for 4.4, and the [rack ticket](visual/rack-ticket.md) to distinguish link recovery from application recovery for 5.3. Review those skills in the [visual lab checkpoint](review/README.md#visual-lab-checkpoint).
+
 [Back to the book](README.md)
