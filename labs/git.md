@@ -31,3 +31,7 @@ The first diff shows the edit from 7 to 8. The cached diff shows the staged new 
 Run git add handoff again. The ordinary diff should then be empty and the cached diff should show port 8.
 
 </details>
+
+## Read the two status columns
+
+After editing the staged file in this lab, run `git status --short`. Expect `AM handoff`. The left column shows the new file staged for addition. The right column shows a further working-tree modification. Stage the correction and run the same check again: the M disappears. Now [follow the commit on a branch graph](../visual/branch-map.md).
