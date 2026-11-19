@@ -30,3 +30,17 @@ The first check says OK. The second reports FAILED even though only one letter c
 It shows the current contents differ from the baseline. Attribution needs separate evidence.
 
 </details>
+
+## Compare two files of equal size
+
+In a fresh practice directory, create two inventory records and predict which column will change.
+
+```bash
+cd "$(mktemp -d)"
+printf 'A7\n' > old
+printf 'A8\n' > new
+wc -c old new
+sha256sum old new
+```
+
+Each file is three bytes, including its newline. Compare the digests before reading the labels at the right. File size alone would miss this edit.
