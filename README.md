@@ -14,6 +14,12 @@ Start with one question: if a command says a file is missing, how do you tell wh
 | 4. Automation, orchestration, and scripting | [Bash conditions and exit status](labs/script.md) · [Git staging and diffs](labs/git.md) |
 | 5. Troubleshooting | [Investigate a storage ticket](chapters/03-storage.md) · [Trace a cable to an interface](chapters/05-interfaces.md) |
 
+## Visual labs
+
+[Trace a rack cable](visual/rack-ticket.md) · [Step through a packet exchange](visual/packet-walk.md) · [Move a Git branch](visual/branch-map.md) · [Test yourself](review/README.md#visual-lab-checkpoint)
+
+Start with the rack diagram if you're on a phone or don't have lab software installed. The packet exercise adds a simulator, and the Git exercise pairs a browser game with a real terminal.
+
 ## Read the book
 
 | Chapter | What you'll do at the keyboard |
