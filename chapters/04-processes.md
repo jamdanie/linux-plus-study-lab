@@ -30,3 +30,7 @@ Expect exit status 0 and no process row for the short timer. The header may stil
 **Try it.** Before the two minutes expire, use the first PID with `ps` again. Why can two commands named `sleep` finish at different times? Each invocation started a separate process with its own PID and duration. For a support note, capture the command name and PID while the longer timer is still running. The name alone can't tell the two timers apart.
 
 [Previous: storage](03-storage.md) · [Next: cables and interfaces](05-interfaces.md) · [Chapter 4 cards](../review/README.md#chapter-4)
+
+## Watch one timer in a process viewer
+
+Start a fresh `sleep 90 &` in interactive Bash and run `echo $!` to capture its PID. Open `top -p "$!"` immediately in the same shell. Watch the command and state columns. If the timer finishes, its row disappears on refresh. Press q to exit. On a system with [htop](https://htop.dev/) installed, you can repeat the exercise with `htop -p "$!"` immediately after launching a new timer. Record the PID so another sleep process cannot be mistaken for yours.
