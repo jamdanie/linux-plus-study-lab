@@ -38,3 +38,7 @@ Use `du -sh backups` for the directory. Use `df -h backups` and compare **Avail*
 **For your portfolio:** Capture your two command outputs in one screenshot or text block. Under it, name the filesystem, report its available space, identify the larger practice directory, and explain whether the evidence supports the ticket. Label it a simulated ticket and use the numbers from your own run.
 
 [Previous: search a log](02-logs.md) · [Review cards](../review/README.md) · [Next: watch a process](04-processes.md)
+
+## Rank two directories
+
+From the storage lab directory, run `du -sk backups reports | sort -nr`. Read the first row as the larger directory by allocated KiB. Sorting numeric values works here because both rows use the same unit. If you switch to human-readable sizes, use `du -sh backups reports | sort -hr` so the suffixes are interpreted. Which output would you paste into a ticket about a single growing folder?
