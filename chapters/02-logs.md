@@ -43,3 +43,7 @@ The results should be 4 and 2. The double arrow appends. A single arrow would re
 </details>
 
 [Previous: terminal basics](01-terminal.md) · [Review cards](../review/README.md) · [Next: investigate storage](03-storage.md)
+
+## Find the most frequent event label
+
+If the same error appears twice with an unrelated event in between, a straight count of adjacent lines misses the repeat. Preserve the original log for its timeline and sort a copy of the labels for counting. Work through the [three-row pipeline puzzle](../visual/pipeline-puzzle.md) to see exactly where the output changes.
