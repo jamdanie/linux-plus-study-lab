@@ -41,3 +41,13 @@ For a short session, do one of these pairings. A screenshot of the layout explai
 | A process disappear | [Live timer and process viewer](chapters/04-processes.md#watch-one-timer-in-a-process-viewer) | The PID and the observation after the timer exits |
 
 [Back to the chapters](README.md)
+
+## Play one round, then repeat it in Linux
+
+| Start with | Do one thing | Check it in the guide |
+| --- | --- | --- |
+| [Data Center on Steam](https://store.steampowered.com/app/4170200/) (paid, optional) | Trace two servers to their first shared uplink. | [Predict whether a shared link can carry the load](visual/rack-capacity.md). The free diagram works too. |
+| [CMD Challenge](https://cmdchallenge.com/) (browser puzzles) | Solve one shell prompt, then explain one option you chose. | [Follow the rows through a local pipeline](visual/pipeline-puzzle.md). |
+| [explainshell](https://explainshell.com/) (visual command reference) | Inspect how a pipe separates two commands. | Run the same pipeline on three known inputs and compare the intermediate rows. |
+
+For a single study session, start with the puzzle if you're learning command syntax or the rack if you're practicing a technician interview.
