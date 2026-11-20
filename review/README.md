@@ -398,3 +398,87 @@ After trying the rack, branching, or storage exercise, answer these from memory.
 </details>
 
 [Back to the book](../README.md)
+
+## Night-shift checkpoint
+
+
+**A TX byte counter rises by 8,000,000 bytes in four seconds. What average rate does that show?**
+
+- A. 2 Mb/s
+- B. 16 Mb/s
+- C. 64 Mb/s
+
+🧠 Think: Convert bytes to bits, then divide by elapsed time.
+
+<details><summary>Show answer</summary>
+
+**B. 16 Mb/s**
+
+- A. 2 Mb/s — Divides by time but leaves the result in megabytes per second.
+- B. 16 Mb/s — Eight million bytes times eight divided by four seconds equals sixteen million bits per second.
+- C. 64 Mb/s — Converts to bits but omits the interval.
+
+📦 Key Idea: Use two readings of the same counter and record the time interval.
+
+</details>
+
+**Your event tags appear as disk, link, disk. Which method produces one total per tag?**
+
+- A. Count adjacent tags immediately
+- B. Sort the tags, then count adjacent matches
+- C. Count the lines in the entire file
+
+🧠 Think: Which operation brings identical tags together?
+
+<details><summary>Show answer</summary>
+
+**B. Sort the tags, then count adjacent matches**
+
+- A. Count adjacent tags immediately — The separated disk entries form two groups.
+- B. Sort the tags, then count adjacent matches — Sorting groups identical tags so uniq -c can count them.
+- C. Count the lines in the entire file — A line count gives a single total across tags.
+
+📦 Key Idea: Use the original timeline for sequence and a sorted stream for totals.
+
+</details>
+
+**You have the exact filename recorded in Ubuntu's package database. Which query returns its owning package?**
+
+- A. dpkg-query -L coreutils
+- B. command -v ls
+- C. dpkg-query -S followed by the path
+
+🧠 Think: Which direction are you searching?
+
+<details><summary>Show answer</summary>
+
+**C. dpkg-query -S followed by the path**
+
+- A. dpkg-query -L coreutils — Starts with a package and lists its files.
+- B. command -v ls — Shows how the shell resolves the command.
+- C. dpkg-query -S followed by the path — Starts with a path and looks for its package owner.
+
+📦 Key Idea: Package-to-files and path-to-package are opposite lookups.
+
+</details>
+
+**An asset dictionary has fields name and role. Which expression reads its role value?**
+
+- A. asset["role"]
+- B. len(asset)
+- C. asset[0]
+
+🧠 Think: What identifies an entry in this dictionary?
+
+<details><summary>Show answer</summary>
+
+**A. asset["role"]**
+
+- A. asset["role"] — Uses the existing string key.
+- B. len(asset) — Returns the number of entries.
+- C. asset[0] — Looks for an integer key that this dictionary does not contain.
+
+📦 Key Idea: Choose the field by key.
+
+</details>
+
