@@ -17,3 +17,14 @@ These are introductory exercises within broader objectives. For example, using `
 Use the [same-subnet packet walk](visual/packet-walk.md) to practice reading neighbor evidence for 1.4, the [branch graph](visual/branch-map.md) to trace a commit for 4.4, and the [rack ticket](visual/rack-ticket.md) to distinguish link recovery from application recovery for 5.3. Review those skills in the [visual lab checkpoint](review/README.md#visual-lab-checkpoint).
 
 [Back to the book](README.md)
+
+## Night-shift practice by objective
+
+| Objective | What you can demonstrate |
+| --- | --- |
+| 1.5 · Shell operations | [Group and count repeating labels](visual/pipeline-puzzle.md). |
+| 2.4 · Software management | [Look up a package's installation status and file ownership](labs/package-owner.md). |
+| 4.3 · Python basics | [Filter a list of rack asset records](labs/python-inventory.md). |
+| 5.1 · Monitoring | [Calculate an interval rate from cumulative counters](labs/counter-delta.md). |
+
+Use the [night-shift ticket](review/night-shift.md) to practice deciding which conclusion the measurements support.
