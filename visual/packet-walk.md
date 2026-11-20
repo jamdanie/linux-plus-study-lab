@@ -10,3 +10,7 @@ Use two PCs and one 2960 switch in [Cisco Packet Tracer](https://www.netacad.com
 **Pass check.** Explain why PC-A needed a destination MAC address and why the exchange could succeed with an empty gateway field. Save one screenshot of the ARP request and one of the ICMP reply. Label each with the question it answers.
 
 [Trace a cable](rack-ticket.md) · [Linux interface walkthrough](../chapters/05-interfaces.md)
+
+## Predict which device answers ARP
+
+Keep the original two-PC topology. On paper, move PC-B to 198.51.100.20/24 and give PC-A a reachable gateway on its own subnet. For an off-subnet destination, PC-A needs the gateway's MAC address for the first hop. The final IP destination remains PC-B. Compare that prediction with your original same-subnet capture, where PC-B answered directly. A functioning routed topology would also need a router and return path.
