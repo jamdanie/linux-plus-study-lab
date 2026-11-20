@@ -20,6 +20,14 @@ Start with one question: if a command says a file is missing, how do you tell wh
 
 Start with the rack diagram if you're on a phone or don't have lab software installed. The packet exercise adds a simulator, and the Git exercise pairs a browser game with a real terminal.
 
+## Night-shift exercises
+
+| Pick a task | Practice | Check your understanding |
+| --- | --- | --- |
+| Investigate a slow rack | [Shared uplink diagram](visual/rack-capacity.md) · [Read counter changes](labs/counter-delta.md) | [Close the night-shift ticket](review/night-shift.md) |
+| Count recurring alerts | [Pipeline puzzle](visual/pipeline-puzzle.md) | [Review cards](review/README.md#night-shift-checkpoint) |
+| Identify what's installed | [Ubuntu package lookup](labs/package-owner.md) · [Python inventory](labs/python-inventory.md) | Explain the difference between a software package and an asset record. |
+
 ## Read the book
 
 | Chapter | What you'll do at the keyboard |
