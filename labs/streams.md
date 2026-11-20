@@ -30,3 +30,7 @@ The status is nonzero. results.txt contains found.txt and errors.txt names missi
 Each command updates $?. After cat, the value describes the read of the report.
 
 </details>
+
+## Watch output while saving a copy
+
+From the practice directory above, run `cat results.txt | tee handoff.txt`, then `cmp results.txt handoff.txt && echo 'Same contents'`. The filename appears on screen and in the saved copy. A plain redirect would write the output without displaying it. The earlier error remains in errors.txt because it was captured separately.
