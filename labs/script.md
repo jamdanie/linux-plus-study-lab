@@ -39,3 +39,7 @@ The empty file returns 1. The filled file returns 0. Quoting the path keeps dail
 No. An empty report exists. The size check catches that case.
 
 </details>
+
+## Test a directory as input
+
+In the same lab directory run `mkdir sample-folder`, then `bash check-report.sh sample-folder` and immediately `echo "$?"`. Expect status 1. A directory exists, but the script explicitly requires a regular file. Try the three cases together: an empty file, a filled file, and this directory. Record the observed status for each.
