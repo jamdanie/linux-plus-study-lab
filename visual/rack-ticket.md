@@ -27,3 +27,7 @@ Inspect the web server's NIC 1 and switch port 7. Check the seating and port sta
 **Try the Linux side.** On an Ubuntu VM, run `ip -brief link` and `ip route show default`. Record the interface named after `dev`, if present. The VM has its own topology. Its output cannot identify the numbered port in the game. For a portfolio, put the labeled diagram and the Linux observation side by side and say which environment produced each one.
 
 [Linux interface walkthrough](../chapters/05-interfaces.md) · [Contents](../README.md)
+
+## Compare a link fault with a busy link
+
+A second ticket reports that both servers remain connected but backups slow down when they run together. Which observation from the first ticket would still be useful? Confirming carrier establishes a starting point. To investigate shared capacity, follow both paths to their first shared link and [calculate average demand](rack-capacity.md).
