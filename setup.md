@@ -18,3 +18,7 @@ The first line of output should be your Linux username. The second shows your wo
 A terminal window is enough for these labs. Packet Tracer can help you draw a network later. For now, seeing paths, matching lines, and disk usage change as you type is the point of the exercise.
 
 [Start Chapter 1](chapters/01-terminal.md)
+
+## Check what this terminal can run
+
+For the new exercises, run `command -v awk sort uniq python3 dpkg-query` inside Linux. Each line names an available program. The pipeline puzzle uses sort and uniq, and the rack calculation uses awk. If dpkg-query is absent on a different distribution, use the Ubuntu playground for the package exercise. [Choose a practice space](practice.md)
