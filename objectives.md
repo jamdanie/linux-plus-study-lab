@@ -28,3 +28,12 @@ Use the [same-subnet packet walk](visual/packet-walk.md) to practice reading nei
 | 5.1 · Monitoring | [Calculate an interval rate from cumulative counters](labs/counter-delta.md). |
 
 Use the [night-shift ticket](review/night-shift.md) to practice deciding which conclusion the measurements support.
+
+## Storage shift practice
+
+| XK0-006 objective | Task | Evidence |
+| --- | --- | --- |
+| 1.3 · Storage | [Identify the destination filesystem](labs/mount-destination.md) | Match the path to TARGET and SOURCE. |
+| 5.2 · Storage troubleshooting | [Diagnose a file-creation failure](review/inode-ticket.md) | Compare block and inode readings on the affected mount. |
+
+[Replay the ticket with a new dataset](games/README.md).
