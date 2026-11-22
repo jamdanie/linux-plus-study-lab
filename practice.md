@@ -51,3 +51,7 @@ For a short session, do one of these pairings. A screenshot of the layout explai
 | [explainshell](https://explainshell.com/) (visual command reference) | Inspect how a pipe separates two commands. | Run the same pipeline on three known inputs and compare the intermediate rows. |
 
 For a single study session, start with the puzzle if you're learning command syntax or the rack if you're practicing a technician interview.
+
+## Try a storage shift without buying a game
+
+Start with the [two-disk rack diagram](visual/storage-map.md). Predict where a file goes if an expected mount disappears. Next [play the three-question terminal game](games/README.md), or use the [paper ticket](review/inode-ticket.md) on a phone. For a closer look at a partition editor, the [GParted manual](https://gparted.org/display-doc.php?name=help-manual) includes a labeled interface and graphical partition display. No partition changes are needed.
