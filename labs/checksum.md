@@ -44,3 +44,7 @@ sha256sum old new
 ```
 
 Each file is three bytes, including its newline. Compare the digests before reading the labels at the right. File size alone would miss this edit.
+
+## Verify a group of recovered files
+
+In a fresh directory, save two named files and generate one manifest with `sha256sum first second > manifest` after creating both with `touch first second`. Append one line to second, then run `sha256sum -c manifest`. The per-file results identify which file changed. Even one failure makes the overall check fail. Compare that evidence with the capacity findings in the [storage ticket](../review/inode-ticket.md).
