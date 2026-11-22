@@ -35,3 +35,7 @@ Listing the archive only shows the stored names. Compare the restored contents w
 ## Recover just one item
 
 In the same lab directory, run `mkdir one-file` followed by `tar -xzf notes.tar.gz -C one-file notes/handoff`. Check `find one-file -type f`. You should see just the requested file. Use the member name exactly as it appeared in the archive listing. An absolute path on the live machine can refer to a different location.
+
+## Check a restore destination before extraction
+
+Run `findmnt --target restored` and `df -i restored` from your archive lab directory. Write down the mount and whether it has available inodes. A backup containing thousands of small files can need little block space and many file records. [Practice reading the two measurements](inode-budget.md).
