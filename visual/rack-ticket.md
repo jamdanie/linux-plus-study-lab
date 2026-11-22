@@ -31,3 +31,7 @@ Inspect the web server's NIC 1 and switch port 7. Check the seating and port sta
 ## Compare a link fault with a busy link
 
 A second ticket reports that both servers remain connected but backups slow down when they run together. Which observation from the first ticket would still be useful? Confirming carrier establishes a starting point. To investigate shared capacity, follow both paths to their first shared link and [calculate average demand](rack-capacity.md).
+
+## Trace a storage ticket on the same rack
+
+The cable ticket established which server you were looking at. A new report says its backups are filling the root filesystem even though the archive disk has room. Sketch the expected path from server to disk, partition, and mount before suggesting a new drive. Then check your reasoning against the [two-disk map](storage-map.md).
