@@ -37,3 +37,7 @@ Move renamed back to report. The stored path resolves again.
 ## Predict the inode numbers
 
 In the directory from this lab, run `ls -li renamed hard-copy shortcut`. Match the first column for the two names that still open the same data. Next run `printf 'second line\n' >> hard-copy` and read `cat renamed`. The new line appears through either hard link. The broken symbolic link still points to the old name.
+
+## Count distinct inode numbers
+
+In the original lab directory, run `stat -c '%i' hard-copy renamed | sort -u | wc -l`. Predict the result from the link count you saw earlier. Both names refer to one file on the same filesystem, so the answer is 1. An inode number is unique only within its filesystem. Include the device ID with `stat -c '%d:%i'` when comparing across mounts.
