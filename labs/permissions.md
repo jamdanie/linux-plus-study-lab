@@ -40,3 +40,7 @@ For a regular file showing `-rw-r-----`, cover the first character and split the
 | rw- = 4 + 2 | r-- = 4 | --- = 0 |
 
 Predict the result of `chmod u-w handoff` after the 640 step above. Check with `stat -c '%A %a' handoff`. You should get 440. Restore the owner's write bit with `chmod u+w handoff`.
+
+## Distinguish two file-creation failures
+
+A process reports “Permission denied” creating a file. The next ticket says “No space left on device.” Before changing any permission, record the exact error. For the first, check the process identity and write/search permissions on the parent directory. For the second, compare block and inode availability on that directory's filesystem. [Try the storage case](../review/inode-ticket.md).
