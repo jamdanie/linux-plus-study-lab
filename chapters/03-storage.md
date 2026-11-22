@@ -42,3 +42,7 @@ Use `du -sh backups` for the directory. Use `df -h backups` and compare **Avail*
 ## Rank two directories
 
 From the storage lab directory, run `du -sk backups reports | sort -nr`. Read the first row as the larger directory by allocated KiB. Sorting numeric values works here because both rows use the same unit. If you switch to human-readable sizes, use `du -sh backups reports | sort -hr` so the suffixes are interpreted. Which output would you paste into a ticket about a single growing folder?
+
+## Choose a second check when blocks are available
+
+A writer reports “No space left on device,” but df -h shows free space. Ask which path the writer used. Check that path with `findmnt --target` and compare its block and inode availability. The [three-host game](../games/README.md) asks you to identify the affected host, mount and device from separate reports.
