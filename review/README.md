@@ -482,3 +482,86 @@ After trying the rack, branching, or storage exercise, answer these from memory.
 
 </details>
 
+## Storage shift checkpoint
+
+
+**A host cannot create a file under /srv. Blocks are 42% used and free inodes are zero. Which check best confirms the suspected limit?**
+
+- A. df -i /srv
+- B. du -sh /srv
+- C. pwd
+
+🧠 Think: Which resource tracks file records?
+
+<details><summary>Show answer</summary>
+
+**A. df -i /srv**
+
+- A. df -i /srv — Reports inode availability for that path.
+- B. du -sh /srv — Summarizes allocated space under a directory.
+- C. pwd — Shows the shell's current location.
+
+📦 Key Idea: Check inode and block availability separately.
+
+</details>
+
+**Which command identifies the mount covering an existing directory?**
+
+- A. ls -i directory
+- B. findmnt --target directory
+- C. wc -c file
+
+🧠 Think: The job specifies a path. You need the backing mount.
+
+<details><summary>Show answer</summary>
+
+**B. findmnt --target directory**
+
+- A. ls -i directory — Shows the inode number of listed entries.
+- B. findmnt --target directory — Resolves the path to its covering mount.
+- C. wc -c file — Counts bytes in a file.
+
+📦 Key Idea: A directory name alone cannot establish which volume is mounted.
+
+</details>
+
+**Two hard-linked names on the same filesystem identify how many distinct inodes?**
+
+- A. Two
+- B. One per directory
+- C. One
+
+🧠 Think: What does creating a hard link add?
+
+<details><summary>Show answer</summary>
+
+**C. One**
+
+- A. Two — Two directory entries can share the record.
+- B. One per directory — The file can have names in different directories.
+- C. One — Both names refer to the same inode.
+
+📦 Key Idea: Count distinct device and inode pairs.
+
+</details>
+
+**A restored file passes its checksum. Which extra check documents the filesystem it was restored onto?**
+
+- A. Run findmnt --target on the restore directory
+- B. Repeat the checksum
+- C. Count lines in the file
+
+🧠 Think: What evidence identifies storage placement?
+
+<details><summary>Show answer</summary>
+
+**A. Run findmnt --target on the restore directory**
+
+- A. Run findmnt --target on the restore directory — Reports the covering mount and backing source.
+- B. Repeat the checksum — Confirms the same content again.
+- C. Count lines in the file — Describes text length.
+
+📦 Key Idea: Verify both contents and destination.
+
+</details>
+
