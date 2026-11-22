@@ -14,6 +14,12 @@ Start with one question: if a command says a file is missing, how do you tell wh
 | 4. Automation, orchestration, and scripting | [Bash conditions and exit status](labs/script.md) · [Git staging and diffs](labs/git.md) |
 | 5. Troubleshooting | [Investigate a storage ticket](chapters/03-storage.md) · [Trace a cable to an interface](chapters/05-interfaces.md) |
 
+## Play a storage shift
+
+[Play the terminal game](games/README.md) · [Use the paper ticket](review/inode-ticket.md) · [Review four flashcards](review/README.md#storage-shift-checkpoint)
+
+A host has room on disk but cannot create a file. Read three simulated host reports and earn points for identifying the affected host, mount, and device. If you're new to storage, start with the [rack-to-mount diagram](visual/storage-map.md), then try the [inode lab](labs/inode-budget.md) and [mount lookup](labs/mount-destination.md).
+
 ## Visual labs
 
 [Trace a rack cable](visual/rack-ticket.md) · [Step through a packet exchange](visual/packet-walk.md) · [Move a Git branch](visual/branch-map.md) · [Test yourself](review/README.md#visual-lab-checkpoint)
