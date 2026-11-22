@@ -31,3 +31,7 @@ Expect OK and 0 before the edit, then FAILED and 1 afterward. Running the check 
 </details>
 
 [Review archive recovery](../labs/archive.md) · [Review checksums](../labs/checksum.md) · [Contents](../README.md)
+
+## Include the filesystem in your restore evidence
+
+A successful checksum tells you the restored bytes matched. To also document the destination, run `findmnt --target recovered` in the lab directory. Include its TARGET and SOURCE alongside the checksum result. A restore into a directory on the wrong filesystem can still produce an identical file.
