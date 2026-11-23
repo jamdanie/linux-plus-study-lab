@@ -14,6 +14,12 @@ Start with one question: if a command says a file is missing, how do you tell wh
 | 4. Automation, orchestration, and scripting | [Bash conditions and exit status](labs/script.md) · [Git staging and diffs](labs/git.md) |
 | 5. Troubleshooting | [Investigate a storage ticket](chapters/03-storage.md) · [Trace a cable to an interface](chapters/05-interfaces.md) |
 
+## Play a service desk shift
+
+[Start three scored tickets](games/service-desk.md) · [Follow the service diagram](visual/service-state.md) · [Review four cards](review/README.md#service-desk-checkpoint)
+
+A server is powered on, but the user still needs a fresh report. Diagnose a boot configuration issue, a failed collector, and a running service with stale output. Then [inspect a boot link](labs/offline-enable.md) or [read the journal](labs/unit-journal.md).
+
 ## Play a storage shift
 
 [Play the terminal game](games/README.md) · [Use the paper ticket](review/inode-ticket.md) · [Review four flashcards](review/README.md#storage-shift-checkpoint)
