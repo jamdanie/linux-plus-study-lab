@@ -47,3 +47,7 @@ The results should be 4 and 2. The double arrow appends. A single arrow would re
 ## Find the most frequent event label
 
 If the same error appears twice with an unrelated event in between, a straight count of adjacent lines misses the repeat. Preserve the original log for its timeline and sort a copy of the labels for counting. Work through the [three-row pipeline puzzle](../visual/pipeline-puzzle.md) to see exactly where the output changes.
+
+## Read events from the same run
+
+A success message can belong to a different job. In the [collector timeline](../games/service-failure.md), first cover the source column and read only the last event. Now uncover the source and timestamp. Does the apparent recovery still hold? In a live journal, filter by unit and boot before comparing events. [Try the journal lab](../labs/unit-journal.md).
