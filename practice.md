@@ -55,3 +55,7 @@ For a single study session, start with the puzzle if you're learning command syn
 ## Try a storage shift without buying a game
 
 Start with the [two-disk rack diagram](visual/storage-map.md). Predict where a file goes if an expected mount disappears. Next [play the three-question terminal game](games/README.md), or use the [paper ticket](review/inode-ticket.md) on a phone. For a closer look at a partition editor, the [GParted manual](https://gparted.org/display-doc.php?name=help-manual) includes a labeled interface and graphical partition display. No partition changes are needed.
+
+## Try a service ticket in the browser
+
+Choose [Service Desk Shift](games/service-desk.md) to play directly on GitHub. Each round gives you evidence, a choice, and a scoring explanation. For a browser workspace focused on unit files, explore [systemd by example](https://systemd-by-example.com/). Compare the directives in one service example with the [offline enablement lab](labs/offline-enable.md). If you already play Data Center Simulator, pair one physical inspection with the [service diagram](visual/service-state.md) and label which observations came from which environment.
