@@ -13,3 +13,7 @@ If you haven't cloned the repo, open [the game file](storage-shift.py), use GitH
 To replay a fixed case, add `--seed 7` to the launch command. Leave it off for a fresh draw. The score appears after the third question. Quitting closes the temporary workspace. On a phone or with only one terminal, use the [paper version](../review/inode-ticket.md).
 
 [What an inode measures](../labs/inode-budget.md) · [Table of contents](../README.md)
+
+## Switch to the service desk
+
+For a second game with no download, take the [three-ticket service shift](service-desk.md). Storage Shift tests whether you can identify a constrained resource. Service Desk Shift tests which observation can justify closing a ticket. For a mixed round, diagnose a storage shortage first, then decide how to verify that the reporting service has recovered.
