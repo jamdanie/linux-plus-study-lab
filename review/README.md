@@ -565,3 +565,94 @@ After trying the rack, branching, or storage exercise, answer these from memory.
 
 </details>
 
+## Service desk checkpoint
+
+
+**Which query checks whether a unit is active right now?**
+
+- A. systemctl is-enabled
+- B. systemctl is-active
+- C. journalctl --list-boots
+
+🧠 Think: Which question concerns the present run?
+
+<details><summary>Show answer</summary>
+
+**B. systemctl is-active**
+
+⚡ Why:
+
+- A. systemctl is-enabled — Reports the unit's enablement state.
+- B. systemctl is-active — Queries the current active state.
+- C. journalctl --list-boots — Lists boots represented in the journal.
+
+📦 Key Idea: Check current state separately from boot configuration.
+
+</details>
+
+**A unit with WantedBy=multi-user.target is disabled. What does enabling it normally create?**
+
+- A. An installation link in the target's wants directory
+- B. A new executable binary
+- C. A successful application sample
+
+🧠 Think: What did the offline lab change?
+
+<details><summary>Show answer</summary>
+
+**A. An installation link in the target's wants directory**
+
+⚡ Why:
+
+- A. An installation link in the target's wants directory — The link expresses a dependency for activation through the target.
+- B. A new executable binary — The installed executable stays the same.
+- C. A successful application sample — An output sample requires the application to run and do its work.
+
+📦 Key Idea: Inspect the link and verify the application separately.
+
+</details>
+
+**Which journalctl options narrow entries to one unit during the current boot?**
+
+- A. -n 20 alone
+- B. --list-boots
+- C. -u UNIT -b
+
+🧠 Think: Filter by both source and boot.
+
+<details><summary>Show answer</summary>
+
+**C. -u UNIT -b**
+
+⚡ Why:
+
+- A. -n 20 alone — Limits the count but leaves source and boot unrestricted.
+- B. --list-boots — Lists available boots.
+- C. -u UNIT -b — Selects the named unit and current boot.
+
+📦 Key Idea: Scope the evidence to the affected run.
+
+</details>
+
+**A long-running reporter is active after restart. Which observation supports closing a missing-output ticket?**
+
+- A. The old report still exists
+- B. A new valid sample arrived at the intended path
+- C. The unit is enabled
+
+🧠 Think: What did the user need from the service?
+
+<details><summary>Show answer</summary>
+
+**B. A new valid sample arrived at the intended path**
+
+⚡ Why:
+
+- A. The old report still exists — An old file can predate the incident.
+- B. A new valid sample arrived at the intended path — Confirms the expected work completed after restart.
+- C. The unit is enabled — Describes activation configuration.
+
+📦 Key Idea: Check the deliverable the user depends on.
+
+</details>
+
