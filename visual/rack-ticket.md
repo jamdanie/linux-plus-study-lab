@@ -35,3 +35,7 @@ A second ticket reports that both servers remain connected but backups slow down
 ## Trace a storage ticket on the same rack
 
 The cable ticket established which server you were looking at. A new report says its backups are filling the root filesystem even though the archive disk has room. Sketch the expected path from server to disk, partition, and mount before suggesting a new drive. Then check your reasoning against the [two-disk map](storage-map.md).
+
+## Verify the workload after the link returns
+
+A link light comes back on at 14:08. The monitoring application still shows a 13:56 sample. Before declaring recovery, identify the expected sampling interval and the host that produces the sample. Use the [service decision diagram](service-state.md) to decide where to look next.
