@@ -37,3 +37,7 @@ Use the [night-shift ticket](review/night-shift.md) to practice deciding which c
 | 5.2 · Storage troubleshooting | [Diagnose a file-creation failure](review/inode-ticket.md) | Compare block and inode readings on the affected mount. |
 
 [Replay the ticket with a new dataset](games/README.md).
+
+## Practice systemd unit management
+
+For objective **2.5**, [build and remove an enablement link](labs/offline-enable.md) and [inspect a unit's recent journal](labs/unit-journal.md). Check your judgment in the [service desk shift](games/service-desk.md). A complete answer distinguishes activation at boot, current state, and evidence that the application produced the expected result.
