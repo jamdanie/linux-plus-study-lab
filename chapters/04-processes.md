@@ -34,3 +34,7 @@ Expect exit status 0 and no process row for the short timer. The header may stil
 ## Watch one timer in a process viewer
 
 Start a fresh `sleep 90 &` in interactive Bash and run `echo $!` to capture its PID. Open `top -p "$!"` immediately in the same shell. Watch the command and state columns. If the timer finishes, its row disappears on refresh. Press q to exit. On a system with [htop](https://htop.dev/) installed, you can repeat the exercise with `htop -p "$!"` immediately after launching a new timer. Record the PID so another sleep process cannot be mistaken for yours.
+
+## Connect a process snapshot to a service ticket
+
+A PID identifies one running process. The unit name gives you a way to follow the same service across restarts, even when the PID changes. For a long-running collector, record both the unit state and a new output sample. Try the [quiet monitor case](../games/service-output.md) and decide whether the process evidence is sufficient to close it.
