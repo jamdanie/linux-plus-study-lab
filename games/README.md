@@ -17,3 +17,7 @@ To replay a fixed case, add `--seed 7` to the launch command. Leave it off for a
 ## Switch to the service desk
 
 For a second game with no download, take the [three-ticket service shift](service-desk.md). Storage Shift tests whether you can identify a constrained resource. Service Desk Shift tests which observation can justify closing a ticket. For a mixed round, diagnose a storage shortage first, then decide how to verify that the reporting service has recovered.
+
+## Play a container replacement shift
+
+[Container Shift](container-shift.md) gives you two running replacement candidates and a missing report. Score yourself on the mount evidence and recovery check. Choose this round when you want to practice reading configuration captures in a browser without downloading an image.
