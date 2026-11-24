@@ -9,10 +9,16 @@ Start with one question: if a command says a file is missing, how do you tell wh
 | XK0-006 domain | Jump directly to a topic |
 | --- | --- |
 | 1. System management | [Filesystem space](chapters/03-storage.md) · [Interfaces and routes](chapters/05-interfaces.md) · [Search log text](chapters/02-logs.md) · [Separate output and errors](labs/streams.md) · [Restore a backup](labs/archive.md) |
-| 2. Services and user management | [Paths and directories](chapters/01-terminal.md) · [Hard and symbolic links](labs/links.md) · [Owner and group](labs/identity.md) · [Processes and jobs](chapters/04-processes.md) |
+| 2. Services and user management | [Paths and directories](chapters/01-terminal.md) · [Hard and symbolic links](labs/links.md) · [Owner and group](labs/identity.md) · [Processes and jobs](chapters/04-processes.md) · [Container storage](visual/container-layers.md) |
 | 3. Security | [File permissions](labs/permissions.md) · [Verify a checksum](labs/checksum.md) |
 | 4. Automation, orchestration, and scripting | [Bash conditions and exit status](labs/script.md) · [Git staging and diffs](labs/git.md) |
 | 5. Troubleshooting | [Investigate a storage ticket](chapters/03-storage.md) · [Trace a cable to an interface](chapters/05-interfaces.md) |
+
+## Play Container Shift
+
+[Start the six-point ticket](games/container-shift.md) · [Trace the storage layers](visual/container-layers.md) · [Review four cards](review/README.md#container-shift-checkpoint)
+
+A replacement collector is running, but yesterday's handoff is missing. [Compare its mount evidence offline](labs/container-inspect.md) or [run two disposable containers](labs/container-volume.md) and watch which file survives.
 
 ## Play a service desk shift
 
