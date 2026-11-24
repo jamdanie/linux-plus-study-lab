@@ -59,3 +59,13 @@ Start with the [two-disk rack diagram](visual/storage-map.md). Predict where a f
 ## Try a service ticket in the browser
 
 Choose [Service Desk Shift](games/service-desk.md) to play directly on GitHub. Each round gives you evidence, a choice, and a scoring explanation. For a browser workspace focused on unit files, explore [systemd by example](https://systemd-by-example.com/). Compare the directives in one service example with the [offline enablement lab](labs/offline-enable.md). If you already play Data Center Simulator, pair one physical inspection with the [service diagram](visual/service-state.md) and label which observations came from which environment.
+
+## Choose a container practice environment
+
+| Your setup | First activity | What to keep |
+| --- | --- | --- |
+| Phone or browser only | [Play Container Shift](games/container-shift.md) using the linked evidence. | The original mapping and one correction for each replacement. |
+| Linux terminal with Python 3 | [Read simulated Docker inspect captures](labs/container-inspect.md). | The two printed candidate mappings. |
+| Docker-capable sandbox | [Run the real volume experiment](labs/container-volume.md). The [iximiuz Labs playground catalog](https://labs.iximiuz.com/playgrounds) lists browser environments; check the selected playground's access tier and installed tools. | Output showing which file survived replacement. |
+
+For the visual route, compare [Docker's illustrated storage lesson](https://docs.docker.com/learn/content/keep-data-with-volumes-and-bind-mounts/) with the guide's [rack-to-container diagram](visual/container-layers.md).
