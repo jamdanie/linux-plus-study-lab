@@ -656,3 +656,94 @@ After trying the rack, branching, or storage exercise, answer these from memory.
 
 </details>
 
+## Container shift checkpoint
+
+
+**A collector is removed and replaced from the same image. Which new file should survive when the same volume is reattached?**
+
+- A. A note in its old writable layer
+- B. A handoff written in the mounted volume
+- C. Every new file from the old container
+
+🧠 Think: Where were the bytes written?
+
+<details><summary>Show answer</summary>
+
+**B. A handoff written in the mounted volume**
+
+⚡ Why:
+
+- A. A note in its old writable layer — The old layer belongs to the removed container.
+- B. A handoff written in the mounted volume — The named volume holds data across replacement.
+- C. Every new file from the old container — Sharing an image does not copy writes from an earlier container.
+
+📦 Key Idea: Record the mount for every path that must persist.
+
+</details>
+
+**Which inspect field gives the path visible to the application inside a container?**
+
+- A. Destination
+- B. Name of the volume
+- C. RW
+
+🧠 Think: The ticket asks where the process reads its file.
+
+<details><summary>Show answer</summary>
+
+**A. Destination**
+
+⚡ Why:
+
+- A. Destination — Identifies the mount path inside the container.
+- B. Name of the volume — Identifies the volume being mounted.
+- C. RW — Describes whether the mount permits writes.
+
+📦 Key Idea: Compare both volume identity and destination.
+
+</details>
+
+**The correct volume is mounted at /archive. The collector reads /reports/handoff. Where should you inspect for the old handoff first?**
+
+- A. /reports/handoff on the physical host
+- B. The image tag
+- C. /archive/handoff inside the container
+
+🧠 Think: Follow the data to the actual mount.
+
+<details><summary>Show answer</summary>
+
+**C. /archive/handoff inside the container**
+
+⚡ Why:
+
+- A. /reports/handoff on the physical host — That host path is not established by the mapping.
+- B. The image tag — A tag identifies an image reference.
+- C. /archive/handoff inside the container — The mounted data is visible under /archive.
+
+📦 Key Idea: A path mismatch can resemble missing data.
+
+</details>
+
+**A read-only verifier sees yesterday's report after replacement. What is established?**
+
+- A. The writer produced a fresh sample
+- B. The verifier can read that existing report
+- C. Every process can update it
+
+🧠 Think: Which action was actually observed?
+
+<details><summary>Show answer</summary>
+
+**B. The verifier can read that existing report**
+
+⚡ Why:
+
+- A. The writer produced a fresh sample — Requires evidence after replacement.
+- B. The verifier can read that existing report — A successful read verifies visibility for this reader.
+- C. Every process can update it — A read-only mount prevents writes through that mount.
+
+📦 Key Idea: Verify fresh application output separately.
+
+</details>
+
