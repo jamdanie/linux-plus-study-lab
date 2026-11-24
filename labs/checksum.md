@@ -48,3 +48,7 @@ Each file is three bytes, including its newline. Compare the digests before read
 ## Verify a group of recovered files
 
 In a fresh directory, save two named files and generate one manifest with `sha256sum first second > manifest` after creating both with `touch first second`. Append one line to second, then run `sha256sum -c manifest`. The per-file results identify which file changed. Even one failure makes the overall check fail. Compare that evidence with the capacity findings in the [storage ticket](../review/inode-ticket.md).
+
+## Separate content verification from mount verification
+
+Two disposable volumes both contain identical copies of yesterday's handoff. Their SHA-256 values match. Does that identify which volume is attached to the running writer? Inspect the mount mapping for that question. Use the checksum to verify the recovered contents and the [mount reader](container-inspect.md) to verify identity and destination.
