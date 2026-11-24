@@ -13,3 +13,7 @@ TARGET is the mount point covering the directory. SOURCE identifies the backing 
 **Try another path.** Run `findmnt --target / --output TARGET,SOURCE,FSTYPE`. Do the two paths resolve to the same mount on your system? Record the output either way. For a job that requires a specific volume, compare the observed result with the expected mount before writing.
 
 [Read the example storage map](../visual/storage-map.md)
+
+## Compare the host path with the container path
+
+A host can see a volume in the engine's storage area while the application sees /reports. Inspect the mount from the perspective named in the ticket. In the [two replacement captures](container-inspect.md), write the volume identity and the application-visible destination on separate lines. Which line changes for the green candidate?
