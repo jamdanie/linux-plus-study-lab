@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "/collector-old",
+    "State": {
+      "Status": "running"
+    },
+    "Mounts": [
+      {
+        "Type": "volume",
+        "Name": "rack-history",
+        "Destination": "/reports",
+        "RW": true
+      }
+    ]
+  }
+]
