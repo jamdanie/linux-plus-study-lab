@@ -1,0 +1,30 @@
+[
+  {
+    "Name": "/collector-blue",
+    "State": {
+      "Status": "running"
+    },
+    "Mounts": [
+      {
+        "Type": "volume",
+        "Name": "rack-history-empty",
+        "Destination": "/reports",
+        "RW": true
+      }
+    ]
+  },
+  {
+    "Name": "/collector-green",
+    "State": {
+      "Status": "running"
+    },
+    "Mounts": [
+      {
+        "Type": "volume",
+        "Name": "rack-history",
+        "Destination": "/archive",
+        "RW": true
+      }
+    ]
+  }
+]
