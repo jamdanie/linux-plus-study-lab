@@ -39,3 +39,7 @@ In the same lab directory, run `mkdir one-file` followed by `tar -xzf notes.tar.
 ## Check a restore destination before extraction
 
 Run `findmnt --target restored` and `df -i restored` from your archive lab directory. Write down the mount and whether it has available inodes. A backup containing thousands of small files can need little block space and many file records. [Practice reading the two measurements](inode-budget.md).
+
+## Check what a volume backup actually captured
+
+A restored archive contains reports/handoff. Before claiming a successful volume recovery, identify the volume that was attached when the archive was made and read back the expected report from the restore location. If a job archived an unmounted directory, the archive can open normally while omitting the intended dataset. Compare this with the [original mount evidence](../fixtures/container-shift/before.json).
