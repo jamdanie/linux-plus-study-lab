@@ -39,3 +39,7 @@ The cable ticket established which server you were looking at. A new report says
 ## Verify the workload after the link returns
 
 A link light comes back on at 14:08. The monitoring application still shows a 13:56 sample. Before declaring recovery, identify the expected sampling interval and the host that produces the sample. Use the [service decision diagram](service-state.md) to decide where to look next.
+
+## Follow the workload inside one server
+
+After the physical link recovers, a server can still run a replacement container against the wrong storage. Label the rack endpoint, then follow the [collector storage diagram](container-layers.md). Point to the component that must survive replacement for yesterday's handoff to remain readable.
