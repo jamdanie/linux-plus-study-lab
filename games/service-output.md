@@ -13,3 +13,7 @@ B earns the first point. The existing file predates the restart. For the second 
 **Write your handoff.** Include the last known good sample time and the first verified new sample. If you haven't observed a new sample, say which check remains open.
 
 [Return to the shift menu](service-desk.md) · [Read a service state diagram](../visual/service-state.md)
+
+## Trace stale output after container replacement
+
+Suppose the reporter's PID changed during a container replacement. Before testing another restart, check whether its configured report path is backed by the intended volume. Compare the old and new mappings, then verify a fresh sample. [Use the two capture files](../labs/container-inspect.md).
