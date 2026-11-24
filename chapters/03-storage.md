@@ -46,3 +46,7 @@ From the storage lab directory, run `du -sk backups reports | sort -nr`. Read th
 ## Choose a second check when blocks are available
 
 A writer reports “No space left on device,” but df -h shows free space. Ask which path the writer used. Check that path with `findmnt --target` and compare its block and inode availability. The [three-host game](../games/README.md) asks you to identify the affected host, mount and device from separate reports.
+
+## Investigate a report missing after replacement
+
+The filesystem still has room, but a report vanished immediately after a collector was replaced. A capacity reading alone won't tell you whether the application is looking at its old data. Compare the old and new volume names, then their destinations. Try the [six-point replacement ticket](../games/container-shift.md) before checking the answers.
