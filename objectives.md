@@ -41,3 +41,7 @@ Use the [night-shift ticket](review/night-shift.md) to practice deciding which c
 ## Practice systemd unit management
 
 For objective **2.5**, [build and remove an enablement link](labs/offline-enable.md) and [inspect a unit's recent journal](labs/unit-journal.md). Check your judgment in the [service desk shift](games/service-desk.md). A complete answer distinguishes activation at boot, current state, and evidence that the application produced the expected result.
+
+## Practice container storage under objective 2.6
+
+Follow the [image, writable layer, and volume diagram](visual/container-layers.md). [Inspect the replacement candidates](labs/container-inspect.md), then [reattach a disposable volume](labs/container-volume.md). Success means you can predict which file survives and show which mapping gives the replacement access. This covers part of the container objective; image builds and container networking remain separate topics.
