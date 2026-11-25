@@ -45,3 +45,12 @@ For objective **2.5**, [build and remove an enablement link](labs/offline-enable
 ## Practice container storage under objective 2.6
 
 Follow the [image, writable layer, and volume diagram](visual/container-layers.md). [Inspect the replacement candidates](labs/container-inspect.md), then [reattach a disposable volume](labs/container-volume.md). Success means you can predict which file survives and show which mapping gives the replacement access. This covers part of the container objective; image builds and container networking remain separate topics.
+
+## DNS practice by exam objective
+
+| XK0-006 objective | What to demonstrate |
+| --- | --- |
+| 1.4 · Linux network services and configuration | Explain which resolver answered, the record type requested, and whether the system name-service lookup could use a local source. [Command lab](labs/dns-captures.md) |
+| 5.3 · Network troubleshooting | Distinguish NXDOMAIN, a missing requested type, and a timeout, then pick a check consistent with the evidence. [DNS Shift](games/dns-shift.md) |
+
+Use the [cache clock](labs/dns-cache-clock.md) when two resolvers report different addresses after a change.
