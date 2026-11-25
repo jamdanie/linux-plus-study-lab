@@ -43,3 +43,7 @@ A link light comes back on at 14:08. The monitoring application still shows a 13
 ## Follow the workload inside one server
 
 After the physical link recovers, a server can still run a replacement container against the wrong storage. Label the rack endpoint, then follow the [collector storage diagram](container-layers.md). Point to the component that must survive replacement for yesterday's handoff to remain readable.
+
+## Avoid replacing a cable for a name error
+
+Suppose the affected client receives a DNS reply for the exact query and that reply reports NXDOMAIN. Which part of the physical path carried traffic during that test? At least a path between client and responding resolver worked. Before assigning a cable swap, compare the spelling and intended record with the ticket. [Read the sample reply](../fixtures/dns-shift/rack-c.txt).
