@@ -747,3 +747,94 @@ After trying the rack, branching, or storage exercise, answer these from memory.
 
 </details>
 
+## DNS shift checkpoint
+
+
+**A DNS client times out and receives no response header. What can you conclude?**
+
+- A. The queried name does not exist
+- B. No reply reached the client within its timeout
+- C. The record has a zero TTL
+
+🧠 Think: Was any response code observed?
+
+<details><summary>Show answer</summary>
+
+**B. No reply reached the client within its timeout**
+
+⚡ Why:
+
+- A. The queried name does not exist — Requires evidence such as an NXDOMAIN response.
+- B. No reply reached the client within its timeout — Describes the observation without guessing its cause.
+- C. The record has a zero TTL — Requires information from a record.
+
+📦 Key Idea: Distinguish a missing reply from a negative reply.
+
+</details>
+
+**A troubleshooting ticket asks for the IPv6 address of a host. Which DNS record type should you request?**
+
+- A. A
+- B. AAAA
+- C. PTR
+
+🧠 Think: Which record carries a forward IPv6 address?
+
+<details><summary>Show answer</summary>
+
+**B. AAAA**
+
+⚡ Why:
+
+- A. A — Supplies an IPv4 address.
+- B. AAAA — Supplies an IPv6 address.
+- C. PTR — Maps a reverse lookup name to a domain name.
+
+📦 Key Idea: Match the query type to the address family.
+
+</details>
+
+**The resolver cached an A record at 09:00:00 with a 120-second TTL. In the simple cache model, when does that entry expire?**
+
+- A. 09:00:30
+- B. 09:01:20
+- C. 09:02:00
+
+🧠 Think: Add the lifetime to the time the answer was cached.
+
+<details><summary>Show answer</summary>
+
+**C. 09:02:00**
+
+⚡ Why:
+
+- A. 09:00:30 — Only 30 seconds have elapsed.
+- B. 09:01:20 — Only 80 seconds have elapsed.
+- C. 09:02:00 — Exactly 120 seconds have elapsed.
+
+📦 Key Idea: Each cache has its own insertion time.
+
+</details>
+
+**getent returns an address for localhost. Which claim does that support?**
+
+- A. The configured system name-service lookup returned an address
+- B. A public DNS server answered
+- C. A web application is running
+
+🧠 Think: Which parts of the path did this command actually exercise?
+
+<details><summary>Show answer</summary>
+
+**A. The configured system name-service lookup returned an address**
+
+⚡ Why:
+
+- A. The configured system name-service lookup returned an address — The result can come from a local source such as the hosts file.
+- B. A public DNS server answered — A DNS network exchange is not required.
+- C. A web application is running — A name lookup does not test the application.
+
+📦 Key Idea: Choose a tool that tests the layer named in the ticket.
+
+</details>
+
