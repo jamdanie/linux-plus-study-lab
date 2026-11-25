@@ -14,3 +14,7 @@ Use two PCs and one 2960 switch in [Cisco Packet Tracer](https://www.netacad.com
 ## Predict which device answers ARP
 
 Keep the original two-PC topology. On paper, move PC-B to 198.51.100.20/24 and give PC-A a reachable gateway on its own subnet. For an off-subnet destination, PC-A needs the gateway's MAC address for the first hop. The final IP destination remains PC-B. Compare that prediction with your original same-subnet capture, where PC-B answered directly. A functioning routed topology would also need a router and return path.
+
+## Separate a numeric ping from a name lookup
+
+Your Packet Tracer PCs exchanged ICMP using numeric addresses. Which observation would establish that a client could resolve a server name? Record the name, record type and returned address from a DNS lookup. The successful numeric ping remains evidence for its own test. [Classify four resolver captures](../labs/dns-captures.md).
