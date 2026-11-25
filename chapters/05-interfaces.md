@@ -42,3 +42,7 @@ ip route show default
 ## Choose a visual network exercise
 
 If the adapter reports NO-CARRIER, start by identifying both ends of the connection in the [rack ticket](../visual/rack-ticket.md). If the link is up and you want to see how a host learns its neighbor's MAC address, follow the [Packet Tracer exercise](../visual/packet-walk.md). A carrier reading and an ARP reply answer different questions about the same path.
+
+## Check the resolver after confirming the link
+
+A client can have carrier, an address, and a default route while a hostname still fails to resolve. Write down which resolver the client queried. If the client received NXDOMAIN, the path carried a DNS response. If the client timed out, whether the name exists is still open. [Follow the response diagram](../visual/dns-response.md).
