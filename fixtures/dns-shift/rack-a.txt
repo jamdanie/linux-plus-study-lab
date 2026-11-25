@@ -1,0 +1,5 @@
+Simulated training capture
+Query: rack-a.example. A
+Resolver: 192.0.2.53
+Status: NOERROR
+Answer: rack-a.example. 120 IN A 192.0.2.10
