@@ -34,3 +34,7 @@ Each command updates $?. After cat, the value describes the read of the report.
 ## Watch output while saving a copy
 
 From the practice directory above, run `cat results.txt | tee handoff.txt`, then `cmp results.txt handoff.txt && echo 'Same contents'`. The filename appears on screen and in the saved copy. A plain redirect would write the output without displaying it. The earlier error remains in errors.txt because it was captured separately.
+
+## Preserve a lookup tool's status
+
+A capture can contain a meaningful diagnostic even when a command returns an unsuccessful status. Conversely, dig can exit successfully after receiving an NXDOMAIN reply. Record both the program's exit status and the DNS header code when available. For a timeout, quote the client's diagnostic. [See the contrasting cases](dns-captures.md).
