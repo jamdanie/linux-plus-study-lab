@@ -1,0 +1,7 @@
+Simulated training capture
+Query: rack-c.example. A
+Resolver: 192.0.2.53
+Status: NXDOMAIN
+Answer: (none)
+Authority: example. SOA
+No alias is involved.
