@@ -21,3 +21,7 @@ For a second game with no download, take the [three-ticket service shift](servic
 ## Play a container replacement shift
 
 [Container Shift](container-shift.md) gives you two running replacement candidates and a missing report. Score yourself on the mount evidence and recovery check. Choose this round when you want to practice reading configuration captures in a browser without downloading an image.
+
+## Take a DNS shift
+
+[Play four resolver tickets](dns-shift.md) in one terminal with Python 3, or open each evidence file directly on GitHub. Each round asks you to classify a different outcome. Replay with a fixed seed if you want a classmate to see the same questions in the same order.
