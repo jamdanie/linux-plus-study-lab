@@ -69,3 +69,7 @@ Choose [Service Desk Shift](games/service-desk.md) to play directly on GitHub. E
 | Docker-capable sandbox | [Run the real volume experiment](labs/container-volume.md). The [iximiuz Labs playground catalog](https://labs.iximiuz.com/playgrounds) lists browser environments; check the selected playground's access tier and installed tools. | Output showing which file survived replacement. |
 
 For the visual route, compare [Docker's illustrated storage lesson](https://docs.docker.com/learn/content/keep-data-with-volumes-and-bind-mounts/) with the guide's [rack-to-container diagram](visual/container-layers.md).
+
+## Watch a DNS change
+
+Start with [How DNS Works](https://dnsimple.com/comics/how-dns-works/) and trace the query from client to resolver. Then use [Mess With DNS](https://messwithdns.net/) to add an A record under the practice subdomain the site assigns you. Use a lab label such as rack and the documentation address 192.0.2.10. Query the exact name shown using dig in your Linux practice environment and look at the site's request list. The address is for practicing lookups; there is no web service to visit. Repeating a query can hit a cache and produce no new authoritative request. Compare that with the [offline TTL clock](labs/dns-cache-clock.md).
