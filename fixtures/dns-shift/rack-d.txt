@@ -1,0 +1,5 @@
+Simulated training capture
+Query: rack-d.example. A
+Resolver: 192.0.2.53
+Client message: timed out; no servers could be reached
+DNS response header: (none)
