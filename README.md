@@ -14,6 +14,12 @@ Start with one question: if a command says a file is missing, how do you tell wh
 | 4. Automation, orchestration, and scripting | [Bash conditions and exit status](labs/script.md) · [Git staging and diffs](labs/git.md) |
 | 5. Troubleshooting | [Investigate a storage ticket](chapters/03-storage.md) · [Trace a cable to an interface](chapters/05-interfaces.md) |
 
+## Play DNS Shift
+
+[Play four resolver tickets](games/dns-shift.md) · [Trace a DNS response](visual/dns-response.md) · [Review four flashcards](review/README.md#dns-shift-checkpoint)
+
+The cable is connected, but a collector name fails. Read the response before deciding what to fix. [Compare the evidence in Bash](labs/dns-captures.md), then [predict when a cached answer expires](labs/dns-cache-clock.md).
+
 ## Play Container Shift
 
 [Start the six-point ticket](games/container-shift.md) · [Trace the storage layers](visual/container-layers.md) · [Review four cards](review/README.md#container-shift-checkpoint)
