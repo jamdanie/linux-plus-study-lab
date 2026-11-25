@@ -17,3 +17,7 @@ B earns the first point. The existing file predates the restart. For the second 
 ## Trace stale output after container replacement
 
 Suppose the reporter's PID changed during a container replacement. Before testing another restart, check whether its configured report path is backed by the intended volume. Compare the old and new mappings, then verify a fresh sample. [Use the two capture files](../labs/container-inspect.md).
+
+## Check the reporter's destination name
+
+The service now produces a local sample, but sending it to the collector fails during name lookup. Capture the full hostname and the resolver outcome at the time of failure. A fresh local file verifies production; a successful delivery requires separate evidence. [Practice choosing the next name-service check](dns-shift.md).
