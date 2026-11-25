@@ -1,0 +1,7 @@
+Simulated training capture
+Query: rack-b.example. AAAA
+Resolver: 192.0.2.53
+Status: NOERROR
+Answer: (none)
+Authority: example. SOA
+Other evidence: the same name has an A record; no alias or delegation is involved.
