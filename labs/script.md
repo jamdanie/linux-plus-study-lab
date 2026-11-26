@@ -47,3 +47,7 @@ In the same lab directory run `mkdir sample-folder`, then `bash check-report.sh 
 ## Distinguish nonempty output from a new sample
 
 After the positive test, run the file check twice without writing another line. Both runs can succeed on the same old report. Inspect `stat -c '%y %s %n' 'daily report'` before and after. The unchanged modification time and size explain why this script alone cannot detect a stalled producer. [Diagnose a stale report](../games/service-output.md).
+
+## What happens on the next run?
+
+[Run the inventory reporter twice with different input conditions](report-run.md). Capture the exit status immediately after each run. Compare the line count with the previous run to see whether the script produced another record.
