@@ -12,3 +12,7 @@ The first command gives a state snapshot. The second limits journal entries to t
 **No live journal?** Read the four supplied events in [the failed collector](../games/service-failure.md). Separate the application's specific diagnostic from systemd's summary of its exit. Put the event times beside each other before choosing a fix.
 
 [journalctl manual](https://www.freedesktop.org/software/systemd/man/latest/journalctl.html)
+
+## What started this service?
+
+For scheduled work, open [the timer inspection lab](timer-inspection.md). Match LAST in the timer listing to the service journal time before attributing an error to that run.
