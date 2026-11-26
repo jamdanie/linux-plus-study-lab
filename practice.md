@@ -73,3 +73,7 @@ For the visual route, compare [Docker's illustrated storage lesson](https://docs
 ## Watch a DNS change
 
 Start with [How DNS Works](https://dnsimple.com/comics/how-dns-works/) and trace the query from client to resolver. Then use [Mess With DNS](https://messwithdns.net/) to add an A record under the practice subdomain the site assigns you. Use a lab label such as rack and the documentation address 192.0.2.10. Query the exact name shown using dig in your Linux practice environment and look at the site's request list. The address is for practicing lookups; there is no web service to visit. Repeating a query can hit a cache and produce no new authoritative request. Compare that with the [offline TTL clock](labs/dns-cache-clock.md).
+
+## Practice a technician handoff
+
+[Trace one cable and identify a Linux interface](visual/rack-handoff.md). Choose the free rack exercise or a paid Steam scenario. For a five-minute browser exercise, [move one field on the cron clock](visual/cron-clock.md) and predict when the next rack inventory should start.
