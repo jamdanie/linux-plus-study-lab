@@ -838,3 +838,60 @@ After trying the rack, branching, or storage exercise, answer these from memory.
 
 </details>
 
+## Scheduling shift
+
+**Which user crontab runs at 09:15 on weekdays?**
+
+- A. 15 9 * * 1-5
+- B. 9 15 * * 1-5
+- C. 15 9 * * *
+
+<details><summary>Show answer</summary>
+
+**A. 15 9 * * 1-5**
+
+Minute 15 and hour 9 match the request. These fields select 15:09. This includes weekends.
+
+</details>
+
+**Which tool queues one run after a maintenance window?**
+
+- A. cron
+- B. at
+- C. anacron
+
+<details><summary>Show answer</summary>
+
+**B. at**
+
+Cron describes recurring clock matches. at queues a command for a specified time. Anacron handles periodic jobs.
+
+</details>
+
+**A daily cleanup is overdue because a laptop was off. Which tool fits?**
+
+- A. atq
+- B. ps
+- C. anacron
+
+<details><summary>Show answer</summary>
+
+**C. anacron**
+
+atq lists pending at jobs. ps displays processes. Anacron can run an overdue periodic job when the machine is available.
+
+</details>
+
+**A timer triggered at 09:15, but the inventory still shows yesterday. Which check explains a failed run?**
+
+- A. Read the next trigger time
+- B. Read the activated service journal around 09:15
+- C. List interface names
+
+<details><summary>Show answer</summary>
+
+**B. Read the activated service journal around 09:15**
+
+A future trigger says when another run is due. The service journal can show a missing input or other execution error. Interface names alone reveal no report outcome.
+
+</details>
