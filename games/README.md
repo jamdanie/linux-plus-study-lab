@@ -25,3 +25,7 @@ For a second game with no download, take the [three-ticket service shift](servic
 ## Take a DNS shift
 
 [Play four resolver tickets](dns-shift.md) in one terminal with Python 3, or open each evidence file directly on GitHub. Each round asks you to classify a different outcome. Replay with a fixed seed if you want a classmate to see the same questions in the same order.
+
+## Work the dispatch desk
+
+[Play three scheduling tickets](dispatch.md). Earn points for predicting a run time, choosing a catch-up tool, and tracing a stale report back to its input.
