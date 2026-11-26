@@ -54,3 +54,10 @@ Follow the [image, writable layer, and volume diagram](visual/container-layers.m
 | 5.3 · Network troubleshooting | Distinguish NXDOMAIN, a missing requested type, and a timeout, then pick a check consistent with the evidence. [DNS Shift](games/dns-shift.md) |
 
 Use the [cache clock](labs/dns-cache-clock.md) when two resolvers report different addresses after a change.
+
+## Scheduling and timers
+
+| Objective | Show what you can do |
+| --- | --- |
+| 2.3 · Processes and jobs | Read the fields in a user crontab and choose between recurring, one-time and catch-up jobs. [Chapter 6](chapters/06-scheduling.md) |
+| 2.5 · systemd | Identify the unit activated by a timer and inspect its execution result. [Timer inspection](labs/timer-inspection.md) |
