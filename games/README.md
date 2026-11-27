@@ -29,3 +29,7 @@ For a second game with no download, take the [three-ticket service shift](servic
 ## Work the dispatch desk
 
 [Play three scheduling tickets](dispatch.md). Earn points for predicting a run time, choosing a catch-up tool, and tracing a stale report back to its input.
+
+## Which drive failed?
+
+[Play Drive desk](drive-desk.md) when you want to decide whether a storage ticket can close. Three rounds cover a degraded mirror, two failures in a four-bay layout, and a report overwrite.
