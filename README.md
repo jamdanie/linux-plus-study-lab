@@ -62,6 +62,7 @@ Start with the rack diagram if you're on a phone or don't have lab software inst
 | [4. Watch a process start and finish](chapters/04-processes.md) | Start a timer and follow its PID until it exits. |
 | [5. Follow a cable to a Linux interface](chapters/05-interfaces.md) | Read interface and route output, then compare it with a cable observation. |
 | [6. When should the rack report run?](chapters/06-scheduling.md) | Predict the next run and trace a missing inventory record. |
+| [7. The report opens, but one drive is missing](chapters/07-disk-arrays.md) | Read a degraded mirror and predict which bays can fail together. |
 
 [Free browser terminals, videos, and optional Steam games](practice.md)
 
