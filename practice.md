@@ -77,3 +77,7 @@ Start with [How DNS Works](https://dnsimple.com/comics/how-dns-works/) and trace
 ## Practice a technician handoff
 
 [Trace one cable and identify a Linux interface](visual/rack-handoff.md). Choose the free rack exercise or a paid Steam scenario. For a five-minute browser exercise, [move one field on the cron clock](visual/cron-clock.md) and predict when the next rack inventory should start.
+
+## Practice a drive ticket
+
+Start with [four bays on screen](visual/four-bays.md) if you have five minutes. For a portfolio sample, use the [hardware handoff](visual/drive-handoff.md) to pair a drawing or a paid Steam scenario with Linux evidence. The [mirror lab](labs/mirror-status.md) also works in a free Ubuntu terminal using ordinary text files.
