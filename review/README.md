@@ -895,3 +895,115 @@ atq lists pending at jobs. ps displays processes. Anacron can run an overdue per
 A future trigger says when another run is due. The service journal can show a missing input or other execution error. Interface names alone reveal no report outcome.
 
 </details>
+
+## Disk array review
+
+Filter by `chapter_07` in Anki or try these on GitHub.
+
+**A two-member RAID 1 reads [2/1] [U_]. A file opens. What should the ticket say?**
+
+- A. Both copies are healthy
+- B. The file is readable and the mirror is degraded
+- C. The filesystem is full
+
+<details><summary>Show answer</summary>
+
+**B. The file is readable and the mirror is degraded**
+
+A. Two working members would be needed for full redundancy.
+
+B. One active member can serve this read.
+
+C. The status does not measure available space.
+
+</details>
+
+**Which command identifies the filesystem mounted at the path /?**
+
+- A. findmnt -T /
+- B. df -i /
+- C. cat /proc/mdstat
+
+<details><summary>Show answer</summary>
+
+**A. findmnt -T /**
+
+A. findmnt resolves a path to its mount and source.
+
+B. df -i reports inode usage.
+
+C. mdstat describes software array state.
+
+</details>
+
+**Pairs 1+2 and 3+4 form a four-drive RAID 10. After drive 1 fails, which second loss removes the remaining copy in its pair?**
+
+- A. Drive 3
+- B. Drive 4
+- C. Drive 2
+
+<details><summary>Show answer</summary>
+
+**C. Drive 2**
+
+A. Drive 3 belongs to the other pair.
+
+B. Drive 4 belongs to the other pair.
+
+C. Drive 2 holds the surviving copy in the first pair.
+
+</details>
+
+**A correct report was overwritten on a healthy mirror. Where should you look first for the earlier contents?**
+
+- A. The second member
+- B. A retained backup from before the overwrite
+- C. The mount table
+
+<details><summary>Show answer</summary>
+
+**B. A retained backup from before the overwrite**
+
+A. Working members receive the overwrite.
+
+B. The older backup can contain the required version.
+
+C. Mount records identify filesystems and paths.
+
+</details>
+
+**Which layout distributes data across drives with no redundancy?**
+
+- A. RAID 0
+- B. RAID 1
+- C. RAID 6
+
+<details><summary>Show answer</summary>
+
+**A. RAID 0**
+
+A. Striping splits data across members.
+
+B. Mirroring keeps copies.
+
+C. Dual parity supports recovery from two member failures.
+
+</details>
+
+**Which clue best supports closing a degraded mirror ticket?**
+
+- A. A file opens
+- B. The device still has the same name
+- C. Both members are up and recovery has completed
+
+<details><summary>Show answer</summary>
+
+**C. Both members are up and recovery has completed**
+
+A. One surviving copy can serve a read.
+
+B. A name can remain unchanged after a failure.
+
+C. The expected working member count and completed recovery address the alert.
+
+</details>
