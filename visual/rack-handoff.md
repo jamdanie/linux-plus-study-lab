@@ -12,3 +12,7 @@ ip route show default
 Look for the interface name after `dev` on the default route. Find that same name in the link listing. If there is no default route, say so. The browser VM and the simulated rack are separate environments. Record the VM’s interface name under its own heading so the handoff never implies a physical connection between them.
 
 For a recruiter-facing sample, pair an annotated rack screenshot or drawing with the two command outputs. Explain what you traced, which interface the VM would use for its default IPv4 route, and which physical switch port the Linux output leaves unidentified. If you also want to show a changing record, complete the [inventory report lab](../labs/report-run.md) and include the two observed line counts.
+
+## When the ticket names a drive bay
+
+An interface name helps with a network ticket. For a drive ticket, collect the enclosure and bay label, then look for a controller inventory that associates that slot with a device identifier. [Practice a storage handoff](drive-handoff.md) and explain which evidence you would need to match the two views.
