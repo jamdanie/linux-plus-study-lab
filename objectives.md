@@ -61,3 +61,7 @@ Use the [cache clock](labs/dns-cache-clock.md) when two resolvers report differe
 | --- | --- |
 | 2.3 · Processes and jobs | Read the fields in a user crontab and choose between recurring, one-time and catch-up jobs. [Chapter 6](chapters/06-scheduling.md) |
 | 2.5 · systemd | Identify the unit activated by a timer and inspect its execution result. [Timer inspection](labs/timer-inspection.md) |
+
+## Disk arrays and mount points
+
+For XK0-006 objective 1.3, [identify disks, partitions and mounted filesystems](labs/disk-tree.md), then [compare RAID levels](chapters/07-disk-arrays.md). Check your reasoning about redundancy with the [four-bay failure puzzle](visual/four-bays.md). These exercises cover inspection and layout choices. Creating and configuring an array needs separate practice.
